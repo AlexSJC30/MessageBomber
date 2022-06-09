@@ -1,0 +1,22 @@
+﻿<Window x:Class="MessageBomber.AboutWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MessageBomber"
+        mc:Ignorable="d"
+        Title="关于" Height="450" Width="800" Icon="/Resources/Icon.png">
+    <Window.Background>
+        <ImageBrush Stretch="UniformToFill" ImageSource="/Resources/Background.png"/>
+    </Window.Background>
+    <Grid>
+        <Border Background="#7FFFFFFF"/>
+        <ScrollViewer>
+            <Grid>
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,20,0,0" FontSize="20" FontWeight="Bold" Text="信息轰炸器 MessageBomber"/>
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,45,0,0" FontSize="10" FontWeight="Bold" Text="程序版本：1.3.2.0 | Copyright © 2022 AlexSJC"/>
+                <TextBlock Margin="20,70,20,20" FontSize="15" TextWrapping="Wrap" ><Run Text="1.本程序仅供日常娱乐使用，严禁用于非法用途。"/><LineBreak/><Run Text="2.使用本程序造成的任何后果需用户自行承担。"/><LineBreak/><Run Text="3.本程序最终解释权归开发者所有。"/><LineBreak/><Run Text="4.严禁反编译、二次售卖本程序"/><Run Language="zh-cn" Text="。"/></TextBlock>
+            </Grid>
+        </ScrollViewer>
+    </Grid>
+</Window>
